@@ -29,7 +29,6 @@ update_brew() {
     echo "[+] Installing ZSH..."
     brew install zsh;
 }
-
 echo "[!] Configuring ZSH."
 cp -r ./.* ~
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
