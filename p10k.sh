@@ -4,8 +4,8 @@ if command -v apt &> /dev/null; then
 # Check if pacman command exists
 elif command -v pacman &> /dev/null; then
     update_pacman
-elif command -v pacman &> /dev/null; then
-
+elif command -v brew &> /dev/null; then
+    update_brew
 else
     echo "No supported package manager (apt or pacman) found on your system."
 fi
