@@ -4,6 +4,7 @@ if command -v apt &> /dev/null; then
 # Check if pacman command exists
 elif command -v pacman &> /dev/null; then
     update_pacman
+# Check if brew command exists
 elif command -v brew &> /dev/null; then
     update_brew
 else
