@@ -1,14 +1,19 @@
-# Check if apt command exists
-if command -v apt &> /dev/null; then
-    update_apt
-# Check if pacman command exists
-elif command -v pacman &> /dev/null; then
-    update_pacman
-# Check if brew command exists
-elif command -v brew &> /dev/null; then
-    update_brew
-else
-    echo "No supported package manager (apt or pacman) found on your system."
+if [ $OSTYPE == "linux-gnu" ]; then
+    # Check if apt command exists
+    if command -v apt &> /dev/null; then
+        # update_apt
+        echo "Apt Linux Here";
+    # Check if pacman command exists
+    elif command -v pacman &> /dev/null; then
+        # update_pacman
+        echo "Pacman Linux Here";
+    fi
+elif [ $OSTYPE == "darwin23.0" ]; then
+    # Check if brew command exists
+    if command -v brew &> /dev/null; then
+        # update_brew
+        echo "Macos Here";
+    fi
 fi
 
 update_apt() {
@@ -26,14 +31,14 @@ sudo pacman -S zsh-syntax-highlighting
 update_brew() {
     brew update;
     brew upgrade;
-    echo "[+] Installing ZSH..."
+    echo "[+] Installing ZSH...";
     brew install zsh;
 }
-echo "[!] Configuring ZSH."
-cp -r ./.* ~
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
-echo 'source ~/.powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
-echo "[!] Changing default shell to zsh."
-sudo chsh -s /bin/zsh
-chsh -s /bin/zsh
-exec zsh
+# echo "[!] Configuring ZSH."
+# cp -r ./.* ~
+# git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
+# echo 'source ~/.powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
+# echo "[!] Changing default shell to zsh."
+# sudo chsh -s /bin/zsh
+# chsh -s /bin/zsh
+# exec zsh
