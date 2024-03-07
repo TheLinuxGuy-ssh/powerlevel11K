@@ -1,0 +1,272 @@
+{
+	"username": "Rohan",
+	"theme": {
+		"backgroundColor": "#191c2a",
+		"windowColor": "#24283b",
+		"glowColor": "#394260",
+		"white": "#c0caf5",
+		"gray": "#6D7599",
+		"black": "#737aa2",
+		"red": "#f7768e",
+		"green": "#9ece6a",
+		"yellow": "#e0af68",
+		"blue": "#7aa2f7",
+		"cyan": "#7dcfff",
+		"magenta": "#bb9af7",
+		"violet": "#9d7cd8",
+		"orange": "#ff9e64"
+	},
+	"wallpaper": {
+		"url": "https://media.discordapp.net/attachments/1056573978841448478/1097100053979594885/back.png?width=1920&height=1080",
+		"easing": "ease-in-out",
+		"fadeIn": true,
+		"blur": false
+	},
+	"terminal": {
+		"fixedHeight": true,
+		"windowGlow": true,
+		"textGlow": false
+	},
+	"prompt": {
+		"ctrlC": true,
+		"placeholder": "command...",
+		"placeholderColor": "gray",
+		"userColor": "yellow",
+		"atColor": "gray",
+		"hostColor": "magenta",
+		"promptColor": "magenta",
+		"promptSymbol": "❯",
+		"caretColor": "green",
+		"selectionBg": "yellow",
+		"selectionFg": "black"
+	},
+	"fetch": {
+		"timeFormat": "HH:mm",
+		"dateFormat": "DD/MM/YYYY",
+		"titleColor": "yellow",
+		"image": "https://cdn.discordapp.com/attachments/1056573978841448478/1097098647671414885/roh.png",
+		"data": [
+			"Time: {time}",
+			"Date: {date}",
+			"{seperator}",
+			"OS: Ubuntu Linux {osVersion}",
+			"Browser: Brave {browserVersion}",
+			"Engine: {engineName}",
+			"{seperator}",
+			"{colors}"
+		]
+	},
+	"urlLaunch": {
+		"target": "_blank",
+		"defaultColor": "white",
+		"hoverColor": "violet"
+	},
+	"search": {
+		"default": "https://google.com/search?q=",
+		"target": "_blank",
+		"shortcutRegex": "([A-Za-z0-9]+) (.*)",
+		"shortcuts": [
+			{
+				"alias": "g",
+				"name": "Google Search",
+				"url": "https://google.com/search?q={}"
+			},
+			{
+				"alias": "d",
+				"name": "DuckDuckGo Search",
+				"url": "https://duckduckgo.com/?q={}"
+			},
+			{
+				"alias": "b",
+				"name": "Brave Search",
+				"url": "https://search.brave.com/search?q={}"
+			},
+			{
+				"alias": "gh",
+				"name": "Github Search",
+				"url": "https://github.com/search?q={}"
+			},
+			{
+				"alias": "s",
+				"name": "Stack Overflow Search",
+				"url": "https://stackoverflow.com/search?q={}"
+			},
+			{
+				"alias": "r",
+				"name": "Subreddit Search",
+				"url": "https://reddit.com/r/{}"
+			},
+			{
+				"alias": "w",
+				"name": "Wikipedia Search",
+				"url": "https://en.wikipedia.org/wiki/{}"
+			}
+		]
+	},
+	"sections": {
+		"list": [
+			{
+				"title": "General",
+				"color": "green",
+				"align": "left",
+				"links": [
+					{
+						"name": "Portfolio",
+						"url": "http://rohan.bodmaslmedia.in",
+						"icon": "mdi:web"
+					},
+					{
+						"name": "Godaddy",
+						"url": "https://www.godaddy.com/",
+						"icon": "simple-icons:godaddy"
+					},
+					{
+						"name": "GPT",
+						"url": "https://chat.openai.com/",
+						"icon": "simple-icons:openai"
+					},
+					{
+						"name": "Senarc",
+						"url": "https://senarc.net",
+						"icon": "simple-icons:oracle"
+					}
+				]
+			},
+			{
+				"title": "Dev",
+				"color": "red",
+				"align": "left",
+				"links": [
+					{
+						"name": "GitHub",
+						"url": "https://github.com",
+						"icon": "mdi:github"
+					},
+					{
+						"name": "Awwwards",
+						"url": "https://www.awwwards.com/",
+						"icon": "simple-icons:tga"
+					},
+					{
+						"name": "Codepen",
+						"url": "https://codepen.io",
+						"icon": "mdi:codepen"
+					},
+					{
+						"name": "Stack Overflow",
+						"url": "https://stackoverflow.com/",
+						"icon": "mdi:stack-overflow"
+					}
+				]
+			},
+			{
+				"title": "Social",
+				"color": "violet",
+				"align": "left",
+				"links": [
+					{
+						"name": "Linkedin",
+						"url": "https://linkedin.com",
+						"icon": "mdi:linkedin"
+					},
+					{
+						"name": "Youtube",
+						"url": "https://youtube.com",
+						"icon": "simple-icons:youtube"
+					},
+					{
+						"name": "Reddit",
+						"url": "https://reddit.com",
+						"icon": "mdi:reddit"
+					},
+					{
+						"name": "Instagram",
+						"url": "https://instagram.com",
+						"icon": "simple-icons:instagram"
+					}
+				]
+			},
+			{
+				"title": "Gaming",
+				"color": "cyan",
+				"align": "left",
+				"links": [
+					{
+						"name": "Steam",
+						"url": "https://steamcommunity.com/",
+						"icon": "simple-icons:steam"
+					},
+					{
+						"name": "IGN",
+						"url": "https://ign.com",
+						"icon": "mdi:currency-sign"
+					},
+					{
+						"name": "SteamRIP",
+						"url": "https://steamrip.com/",
+						"icon": "simple-icons:steamdb"
+					},
+					{
+						"name": "Powerline",
+						"url": "https://powerline/.io",
+						"icon": "simple-icons:electron"
+					}
+				]
+			},
+			{
+				"title": "Daily",
+				"color": "blue",
+				"align": "left",
+				"links": [
+					{
+						"name": "UnixCorn",
+						"url": "https://www.reddit.com/r/unixporn/",
+						"icon": "simple-icons:linux"
+					},
+					{
+						"name": "VScode",
+						"url": "vscode://",
+						"icon": "simple-icons:visualstudiocode"
+					},
+					{
+						"name": "Spotify",
+						"url": "https://open.spotify.com/",
+						"icon": "simple-icons:spotify"
+					},
+					{
+						"name": "Pling",
+						"url": "http://pling.com",
+						"icon": "simple-icons:linuxfoundation"
+					}
+				]
+			},
+			{
+				"title": "Tech",
+				"color": "yellow",
+				"align": "left",
+				"links": [
+					{
+						"name": "TechCrunch",
+						"url": "https://techcrunch.com/",
+						"icon": "game-icons:techno-heart"
+					},
+					{
+						"name": "Verge",
+						"url": "https://www.theverge.com/",
+						"icon": "arcticons:verge"
+					},
+					{
+						"name": "It's Foss",
+						"url": "https://itsfoss.com/",
+						"icon": "ri:mastodon-fill"
+					},
+					{
+						"name": "9To5 Linux",
+						"url": "https://9to5linux.com/",
+						"icon": "uil:linux"
+					}
+				]
+			}
+		]
+	}
+}
