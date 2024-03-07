@@ -1,3 +1,17 @@
+echo "
+██████╗  ██████╗ ██╗    ██╗███████╗██████╗ ██╗     ███████╗██╗   ██╗███████╗██╗     ██╗ ██╗██╗  ██╗
+██╔══██╗██╔═══██╗██║    ██║██╔════╝██╔══██╗██║     ██╔════╝██║   ██║██╔════╝██║    ███║███║██║ ██╔╝
+██████╔╝██║   ██║██║ █╗ ██║█████╗  ██████╔╝██║     █████╗  ██║   ██║█████╗  ██║    ╚██║╚██║█████╔╝ 
+██╔═══╝ ██║   ██║██║███╗██║██╔══╝  ██╔══██╗██║     ██╔══╝  ╚██╗ ██╔╝██╔══╝  ██║     ██║ ██║██╔═██╗ 
+██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║███████╗███████╗ ╚████╔╝ ███████╗███████╗██║ ██║██║  ██╗
+╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝  ╚═══╝  ╚══════╝╚══════╝╚═╝ ╚═╝╚═╝  ╚═╝
+";
+read -p "Welcome to Powerlevel11K setup! Begin Installation? (y/n)" confirm
+
+if($confirm == 'y' || $confirm == 'Y'); then
+
+echo "[+] Installing ZSH...";
+
 if [ $OSTYPE == "linux-gnu" ]; then
     # Check if apt command exists
     if command -v apt &> /dev/null; then
@@ -30,7 +44,6 @@ update_pacman() {
 update_brew() {
     brew update;
     brew upgrade;
-    echo "[+] Installing ZSH...";
     brew install zsh;
 }
 
@@ -42,3 +55,4 @@ echo "[!] Changing default shell to zsh."
 sudo chsh -s /bin/zsh
 chsh -s /bin/zsh
 exec zsh
+fi
