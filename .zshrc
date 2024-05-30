@@ -7,7 +7,7 @@ alias clear="clear && exec zsh"
 
 # Welcome Message
 
-echo "\e[43m\e[0;37mWelcome Back \e[1;32m<Your name here>\e[0;37m!"
+echo "\e[43m\e[0;37mWelcome Back \e[1;32m<your name here>\e[0;37m!"
 
 # ZSH Theme & Plugins
 
@@ -25,4 +25,7 @@ source ~/.powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 source ~/.powerlevel10k/powerlevel10k.zsh-theme
+source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
