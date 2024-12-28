@@ -44,7 +44,8 @@ if [ "$confirm" == 'y' ] || [ "$confirm" == 'Y' ]; then
         if command -v brew &> /dev/null; then
             update_brew
         else
-            echo "[x] brew not found, please install brew before running this setup"
+            echo "[-] brew not found, installing brew...";
+            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
         fi
     fi
 
